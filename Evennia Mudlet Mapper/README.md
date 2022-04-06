@@ -38,6 +38,7 @@ class Mapper(DefaultCharacter):
     data for the EvenniaMapper script to use for building the map
     """
 
+
     def get_exit_names(self):
         """
         This will return a rooms list of cardinal exits in their
@@ -65,9 +66,11 @@ class Mapper(DefaultCharacter):
                 exit_names[shortmap[exit.name]] = exit.destination.id
         return exit_names
 
+
     def prompt(self):
         char_prompt = "This prompt will trigger Mudlet Mapper"
         self.msg(prompt=char_prompt)
+
 
     def send_gmcp(self):
         """
