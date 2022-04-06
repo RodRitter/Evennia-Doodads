@@ -35,7 +35,7 @@ If you prefer, you can manually set an area at `area_name` in the GMCP object in
 class Mapper(DefaultCharacter):
     """
     When this character runs around, it will send the appropriate
-    data to for the EvenniaMapper script to use for building the map
+    data for the EvenniaMapper script to use for building the map
     """
 
     def get_exit_names(self):
