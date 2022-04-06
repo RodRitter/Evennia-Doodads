@@ -2,6 +2,10 @@
 
 A Mudlet mapping script to create simple mapping across your world
 
+![image](https://user-images.githubusercontent.com/4159679/162091771-a781de84-224c-4c90-ae70-b7f69c64c2b8.png)
+
+
+
 ## 1. Import the script to Mudlet
 
 Download the script here: [evennia-mapper.xml](https://raw.githubusercontent.com/RodRitter/Evennia-Doodads/main/Evennia%20Mudlet%20Mapper/evennia-mapper.xml)
