@@ -23,7 +23,7 @@ Download the script here: [evennia-mapper.xml](https://raw.githubusercontent.com
 
 If you prefer, you can manually set an area at `area_name` in the GMCP object instead of having nested rooms.
 
-### Step-by-step Code
+### Step-by-step: The Mapper character
 
 ```
 # characters.py
