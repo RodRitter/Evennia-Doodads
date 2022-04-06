@@ -13,7 +13,7 @@ Download the script here: [evennia-mapper.xml](https://raw.githubusercontent.com
 ### Prerequisites
 
 1. Each room needs to have a `coord` attribute: `self.db.coord = (0,0,0)`
-2. You will need to either manually set coordinates for rooms, or use a custom `tunnel` command to auto-generate coordinates. You can find
+2. You will need to either manually set coordinates for rooms, or use a custom `tunnel` command to auto-generate coordinates. You can find a custom `tunnel` command here: [builder_cmds.py](https://github.com/RodRitter/Evennia-Doodads/blob/main/Evennia%20Mudlet%20Mapper/builder_cmds.py)
 3. In this example, an "area" is the room which contains the regular "rooms".
 
 ```
