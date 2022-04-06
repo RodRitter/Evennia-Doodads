@@ -4,8 +4,6 @@ A Mudlet mapping script to create simple mapping across your world
 
 ![image](https://user-images.githubusercontent.com/4159679/162091771-a781de84-224c-4c90-ae70-b7f69c64c2b8.png)
 
-
-
 ## 1. Import the script to Mudlet
 
 Download the script here: [evennia-mapper.xml](https://raw.githubusercontent.com/RodRitter/Evennia-Doodads/main/Evennia%20Mudlet%20Mapper/evennia-mapper.xml)
@@ -15,7 +13,8 @@ Download the script here: [evennia-mapper.xml](https://raw.githubusercontent.com
 ### Prerequisites
 
 1. Each room needs to have a `coord` attribute: `self.db.coord = (0,0,0)`
-2. In this example, an "area" is the room which contains the regular "rooms".
+2. You will need to either manually set coordinates for rooms, or use a custom `tunnel` command to auto-generate coordinates. You can find
+3. In this example, an "area" is the room which contains the regular "rooms".
 
 ```
 # You are in Limbo
@@ -27,8 +26,6 @@ Download the script here: [evennia-mapper.xml](https://raw.githubusercontent.com
 ```
 
 If you prefer, you can manually set an area at `area_name` in the GMCP object instead of having nested rooms.
-
-3. You will need to either manually set coordinates for rooms, or use a custom `tunnel` command to auto-generate coordinates. You can find
 
 ### Step-by-step: The Mapper character
 
