@@ -4,13 +4,13 @@ A Mudlet mapping script to create simple mapping across your world
 
 ## 1. Import the script to Mudlet
 
-Download the script here: [evennia-mapper.xml](https://github.com/RodRitter/Evennia-Doodads/blob/main/Evennia%20Mudlet%20Mapper/evennia-mapper.xml)
+Download the script here: [evennia-mapper.xml](https://raw.githubusercontent.com/RodRitter/Evennia-Doodads/main/Evennia%20Mudlet%20Mapper/evennia-mapper.xml)
 
 ## 2. Project Setup
 
 ### Prerequisites
 
-1. The "area" is the room which contains the regular "rooms"
+1. In this example, an "area" is the room which contains the regular "rooms".
 
 ```
 # You are in Limbo
@@ -20,6 +20,8 @@ Download the script here: [evennia-mapper.xml](https://github.com/RodRitter/Even
 
 # Now you have "City of Helmstead" as your *area*, which contains a room
 ```
+
+If you prefer, you can manually set an area at `area_name` in the GMCP object instead of having nested rooms.
 
 ### Step-by-step Code
 
