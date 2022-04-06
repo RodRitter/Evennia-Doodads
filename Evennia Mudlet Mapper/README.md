@@ -8,17 +8,7 @@ Download the script here: [evennia-mapper.xml](https://github.com/RodRitter/Even
 
 ## 2. Project Setup
 
-### Overview
-
-- We will use the hook: `Character:at_after_move()`
-- `self.msg(location=location_data)`
-  - This will send data via OOB comms (GMCP)
-- `self.msg(prompt=f"{self.hp} HP, {self.mana} MP")`
-  - This will trigger the script to use the data above to create a room in Mudlet Mapper
-
-### Step-by-step Setup
-
-#### Prerequisites
+### Prerequisites
 
 1. The "area" is the room which contains the regular "rooms"
 
@@ -31,7 +21,7 @@ Download the script here: [evennia-mapper.xml](https://github.com/RodRitter/Even
 # Now you have "City of Helmstead" as your *area*, which contains a room
 ```
 
-#### Step-by-step Code
+### Step-by-step Code
 
 ```
 # characters.py
