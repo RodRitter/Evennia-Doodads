@@ -10,7 +10,8 @@ Download the script here: [evennia-mapper.xml](https://raw.githubusercontent.com
 
 ### Prerequisites
 
-1. In this example, an "area" is the room which contains the regular "rooms".
+1. Each room needs to have a `coord` attribute: `self.db.coord = (0,0,0)`
+2. In this example, an "area" is the room which contains the regular "rooms".
 
 ```
 # You are in Limbo
@@ -22,6 +23,8 @@ Download the script here: [evennia-mapper.xml](https://raw.githubusercontent.com
 ```
 
 If you prefer, you can manually set an area at `area_name` in the GMCP object instead of having nested rooms.
+
+3. You will need to either manually set coordinates for rooms, or use a custom `tunnel` command to auto-generate coordinates. You can find
 
 ### Step-by-step: The Mapper character
 
@@ -36,8 +39,14 @@ class Mapper(DefaultCharacter):
 
     def get_exit_names(self):
         """
-        This will return a rooms list of cardinal exits
-        in their short form
+        This will return a rooms list of cardinal exits in their
+        short form, along with the destination room ID's
+
+        The format should be:
+        room_exits = {
+            e: 359,
+            nw: 374,
+        }
         """
         shortmap = {
             "north": "n",
@@ -70,7 +79,7 @@ class Mapper(DefaultCharacter):
                 "area_id": loc.location.id,
                 "area_name": loc.location.name,
                 "room_id": loc.id,
-                "room_coord": "%s,%s,%s" % loc.db.coord,
+                "room_coord": "%s,%s,%s" % loc.db.coord, # Format: 1,0,1
                 "room_exits": exit_names
             }
             self.msg(location=(loc_gmcp))

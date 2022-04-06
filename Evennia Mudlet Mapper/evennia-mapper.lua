@@ -36,7 +36,6 @@ end
 local locData = gmcp.Core.Location -- Base Location Data
 local areaId = locData.area_name .. " (" .. locData.area_id .. ")" -- Generated Area Name
 
-display(locData)
 -- If there is an area, use that ID
 hasArea, fullAreaName = findAreaID(prettyAreaId)
 if(hasArea) then areaId = fullAreaName end
