@@ -88,6 +88,7 @@ class Mapper(DefaultCharacter):
             }
             self.msg(location=(loc_gmcp))
 
+
     def at_after_move(self, source_location):
         super().at_after_move(source_location)
         self.send_gmcp() # Send GMCP data
