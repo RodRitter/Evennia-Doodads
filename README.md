@@ -1,1 +1,1 @@
-# Evennia-Doodads
+# A repository of Evennia libraries and helpers
