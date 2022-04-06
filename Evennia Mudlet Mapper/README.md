@@ -83,7 +83,7 @@ class Mapper(DefaultCharacter):
                 "area_id": loc.location.id,
                 "area_name": loc.location.name,
                 "room_id": loc.id,
-                "room_coord": "%s,%s,%s" % loc.db.coord, # Format: 1,0,1
+                "room_coord": "%s,%s,%s" % loc.db.coord, # Format: "x,y,z"
                 "room_exits": exit_names
             }
             self.msg(location=(loc_gmcp))
