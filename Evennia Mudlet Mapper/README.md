@@ -2,7 +2,7 @@
 
 A Mudlet mapping script to create simple mapping across your world
 
-![image](https://user-images.githubusercontent.com/4159679/162091771-a781de84-224c-4c90-ae70-b7f69c64c2b8.png)
+![image](https://user-images.githubusercontent.com/4159679/162093454-0a51bf73-d835-4662-802c-def51bb0ba11.png)
 
 ## 1. Import the script to Mudlet
 
