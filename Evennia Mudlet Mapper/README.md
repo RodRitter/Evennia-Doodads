@@ -60,6 +60,9 @@ class Mapper(DefaultCharacter):
         self.msg(prompt=char_prompt)
 
     def send_gmcp(self):
+        """
+        Here we will setup the location data and send it via GMCP
+        """
         loc = self.location
         if loc.location:
             exit_names = self.get_exit_names()
